@@ -3,18 +3,26 @@ import { Link } from "react-router-dom";
 const Navbar = () => {
   return (
     <div>
-      <Link to="/" />
-      Home
-      <Link />
-      <Link state={{ txt: "State" }} to="/shop" className="pl-5" />
-      Shop
-      <Link />
-      {/* <Link state={{ txt: "State" }} to="/About" />
-      About
-      <Link />
-      <Link state={{ txt: "State" }} to="/Contact" />
-      Contact
-      <Link /> */}
+      <ul className="flex gap-12">
+        <li>
+          <Link to="/">Home</Link>
+        </li>
+        <li>
+          <Link className="" to="/shop">
+            Shop
+          </Link>
+        </li>
+        <li>
+          <Link className="" to="/about">
+            About
+          </Link>
+        </li>
+        <li>
+          <Link className="" to="/contact">
+            Contact
+          </Link>
+        </li>
+      </ul>
     </div>
   );
 };

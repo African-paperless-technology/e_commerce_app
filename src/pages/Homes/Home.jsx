@@ -94,11 +94,36 @@ const Home = () => {
 
         <div className=" grid grid-cols-4 gap-4 mx-28">
           <div className="relative h-110 bg-gray-100">
-            <div className="absolute top-4 left-44 ml-6">
-              <CirclePercentage percentage={50} color="bg-red-400" />{" "}
-            </div>
+            <div className="relative group">
+              <div className="absolute top-4 left-44 ml-6">
+                <CirclePercentage percentage={50} color="bg-red-400" />{" "}
+              </div>
 
-            <img src={table} alt="" className="w-full h-80 object-cover" />
+              <img
+                src={table}
+                alt=""
+                className="w-full h-80 object-cover transition duration-300 ease-in-out group-hover:filter group-hover:grayscale"
+              />
+              <div className="absolute inset-0 flex flex-col items-center justify-center bg-black bg-opacity-50 opacity-0 transition-opacity duration-300 ease-in-out group-hover:opacity-100">
+                <button className="w-36 h-10 bg-white text-orange-300 mb-6">
+                  Add to cart
+                </button>
+                <div className="grid grid-cols-3 text-white gap6 px-4">
+                  <div>
+                    <img src={partager} alt="" className="w-6 text-white " />
+                    <span>share</span>
+                  </div>
+                  <div>
+                    <img src={comparer} alt="" className="w-6" />
+                    <span className="mr-10">compare</span>
+                  </div>
+                  <div>
+                    <img src={coeur} alt="" className="w-6" />
+                    <span>like</span>
+                  </div>
+                </div>
+              </div>
+            </div>
 
             <div className="ml-2 flex flex-col">
               <span className="text-xl my-2">Syltherine</span>
@@ -108,6 +133,10 @@ const Home = () => {
           </div>
           <div className=" h-110 bg-gray-100  ">
             <div className="relative group">
+              <div className="absolute top-4 left-44 ml-6">
+                <CirclePercentage percentage={50} color="bg-red-400" />{" "}
+              </div>
+
               <img
                 src={petitFauteuil}
                 alt=""
@@ -135,22 +164,69 @@ const Home = () => {
               </div>
             </div>
           </div>
-          <div className=" relative h-110 bg-gray-100 ">
-            <div className="absolute top-4 left-44 ml-6">
-              <CirclePercentage percentage={50} color="bg-red-400" />{" "}
-            </div>
+          <div className=" relative h-105 bg-gray-100 ">
+            <div className="relative group">
+              <div className="absolute top-4 left-44 ml-6">
+                <CirclePercentage percentage={50} color="bg-red-400" />{" "}
+              </div>
 
-            <img src={salon} alt="" className="w-full h-80 object-cover" />
+              <img
+                src={salon}
+                alt=""
+                className="w-full h-80 object-cover transition duration-300 ease-in-out group-hover:filter group-hover:grayscale"
+              />
+
+              <div className="absolute inset-0 flex flex-col items-center justify-center bg-black bg-opacity-50 opacity-0 transition-opacity duration-300 ease-in-out group-hover:opacity-100">
+                <button className="w-36 h-10 bg-white text-orange-300 mb-6">
+                  Add to cart
+                </button>
+                <div className="grid grid-cols-3 text-white gap6 px-4">
+                  <div>
+                    <img src={partager} alt="" className="w-6 text-white " />
+                    <span>share</span>
+                  </div>
+                  <div>
+                    <img src={comparer} alt="" className="w-6" />
+                    <span className="mr-10">compare</span>
+                  </div>
+                  <div>
+                    <img src={coeur} alt="" className="w-6" />
+                    <span>like</span>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
           <div className="relative h-110 bg-gray-100">
-            <div className="absolute top-4 left-44 ml-6">
-              <CirclePercentage percentage={50} color="bg-red-400" />{" "}
+            <div className="relative group">
+              <div className="absolute top-4 left-44 ml-6">
+                <CirclePercentage percentage={50} color="bg-red-400" />{" "}
+              </div>
+              <img
+                src={grandSalon}
+                alt=""
+                className="w-full h-80 object-cover transition duration-300 ease-in-out group-hover:filter group-hover:grayscale"
+              />
+              <div className="absolute inset-0 flex flex-col items-center justify-center bg-black bg-opacity-50 opacity-0 transition-opacity duration-300 ease-in-out group-hover:opacity-100">
+                <button className="w-36 h-10 bg-white text-orange-300 mb-6">
+                  Add to cart
+                </button>
+                <div className="grid grid-cols-3 text-white gap6 px-4">
+                  <div>
+                    <img src={partager} alt="" className="w-6 text-white " />
+                    <span>share</span>
+                  </div>
+                  <div>
+                    <img src={comparer} alt="" className="w-6" />
+                    <span className="mr-10">compare</span>
+                  </div>
+                  <div>
+                    <img src={coeur} alt="" className="w-6" />
+                    <span>like</span>
+                  </div>
+                </div>
+              </div>
             </div>
-            <img
-              src={grandSalon}
-              alt=""
-              className="w-full h-80 object-cover "
-            />
           </div>
 
           {/* {items.map((item, index) => (

@@ -9,7 +9,7 @@ const Headers = () => {
     <nav className="px-6 pt-4 pb-2">
       <div className="flex justify-between flex-row items-center ">
         <h1>FURNIRO</h1>
-        <div className="flex  items-center pl-9">
+        <div className="pl-9">
           <Navbar />
         </div>
         <div className="gap-5 flex  items-center pr-4">

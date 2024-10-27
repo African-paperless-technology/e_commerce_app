@@ -5,6 +5,7 @@ export default {
     extend: {
       height: {
         100: "25rem", // 100
+        105: "26.25rem",
         110: "27.5rem",
         120: "30rem",
         150: "37.5rem", // 150
