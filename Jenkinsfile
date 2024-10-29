@@ -6,9 +6,12 @@ pipeline {
                 bat 'docker build -t my-react-app .'
             }
         }
-        stage('Test') {
+         stage('Tests Selenium') {
             steps {
-                echo "Tous les tests ont réussi !"
+                docker.image('python:3.9').inside {
+                    sh 'pip install selenium'
+                    sh 'python test.py'
+                }
             }
         }
         stage('Deploy') {
