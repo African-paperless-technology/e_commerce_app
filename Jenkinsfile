@@ -3,18 +3,18 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                sh 'docker build -t my-react-app .'
+                bat 'docker build -t my-react-app .'
             }
         }
         stage('Test') {
             steps {
-                sh 'npm test'
+                bat 'npm test'
             }
         }
         stage('Deploy') {
             steps {
-                sh 'docker push my-react-app'
-                sh 'kubectl apply -f deployment.yaml'
+                bat 'docker push my-react-app'
+                bat 'kubectl apply -f deployment.yaml'
             }
         }
     }
